@@ -61,6 +61,7 @@
 			</exclusions>
 		</dependency>
 
+		<!-- ============= poi ============= -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
@@ -73,6 +74,11 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>com.aspose</groupId>
 			<artifactId>aspose-words</artifactId>
 			<version>19.11.0</version>
@@ -80,7 +86,12 @@
 
 	</dependencies>
 
-
+	<repositories>
+		<repository>
+			<id>aspose-maven-repository</id>
+			<url>http://artifact.aspose.com/repo/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
